@@ -51,18 +51,16 @@ struct ModelTri
 class Model
 {
   int ntris;
-  ModelTri *tri;
+  ModelTri* tri;
   int display_list;
 
 public:
-  Model(const char *tris_file);
+  Model(const char* tris_file);
   ~Model();
   void Draw();
   void DrawTri(int index);
-	void CenterOfMass();
-	void Radius();
-//	double radius;
-	Coord3D com;
+  void CenterOfMass();
+  Coord3D com;
 };
 
 #endif
