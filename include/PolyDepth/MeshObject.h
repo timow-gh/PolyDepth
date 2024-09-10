@@ -16,6 +16,8 @@ class MeshObject
 {
 
 public:
+  friend class Controller;
+
   MeshObject(const char* file_name);
 
   MeshObject(const MeshObject& cp);
